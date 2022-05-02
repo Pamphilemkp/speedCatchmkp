@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="firstpage.css">
+    <title>first page</title>
+
+
+</head>
+<body>
+    <div class="hey">
+     <h1>welcome to whac a mole game </h1>
+
+     <h2><a href="level1.html">Start game</a></h2>
+     <h2><a href="about.html">About </a></h2>
+     <h2><a href="howToPlay.html">How to play</a></h2>
+
+
+        <audio id="myAudio"  autoplay loop >
+            <source src="audio1.mp3" type="audio/mpeg" >
+            <source src="audio1.ogg" type="audio/ogg" >
+            Your browser does not support the audio element.
+          </audio>
+
+
+          <p>Click on the icons bellow to enable or disable the sound.</p>
+
+     <button onclick="StartSound()" type="button" id="bt1">🔈</button>
+     <button onclick="pauseSound()" type="button" id="bt2">🔇</button>
+
+    <script>
+
+    const sound = document.getElementById("myAudio")
+    sound.autoplay = true;
+    function StartSound(){
+        sound.play();
+    }
+    function pauseSound(){
+        sound.pause();
+    }
+    </script>
+
+    </div>
+</body>
+</html>

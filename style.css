@@ -1,0 +1,131 @@
+
+
+body{
+    box-sizing:border-box;
+    margin: 0;
+    font-size:3vh;
+    padding: 0;
+ 
+}
+.head{
+    opacity: 0.8;
+    background-image: url("bgfree.jfif");
+    background-color: wheat;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.container{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin: 0px 20px;
+}
+.grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    justify-content:center;
+    gap:10px;
+   /* margin: 0px 15px;*/
+   background-color: black;
+    background-image: url("images/bgg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    
+    
+}
+* .square{
+    border:solid black 1px;
+    border-radius: 100%;
+    height: 30vh;
+    width: 30vw;
+    cursor:pointer;
+    transition: all 0.5 ease-in-out; 
+    background-color:black; 
+}
+
+.square:hover{
+    height: 5vh;
+    width: 5vw;
+    background-color:white;
+}
+
+.mole{
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRX0tfVOljjFvsgyjtCdTdoWBv3-qi_jIGKlA&usqp=CAU");
+    background-repeat: no-repeat;
+    background-size: cover;
+    animation-name: mole;
+    animation-duration: 0.5;
+    animation-timing-function: ease-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    opacity: 0.8;
+}
+
+@keyframes mole{
+    100%{height: 1vh; width:1vw;}
+
+}
+a{
+    text-decoration: none;
+}
+#level{
+    text-align:center;
+   
+   
+}
+h2{
+    font-family: "Lobster", Sans-serif;
+}
+
+/* MOBILES SMALL SCREENS */
+
+@media only screen and (max-width:400px){
+    body{
+        font-size:2.1vh;
+    }
+    .item{
+        margin-left:-10px;
+    }
+    .container{
+        display:flex;
+        flex-direction:column;
+        justify-content:flex-start;
+        align-items:flex-end;
+        margin: 0px 20px;
+    }
+    .mole{
+        background-size: contain;
+    }
+    
+}
+span{
+    color: white;
+}
+button{
+    color: white;
+    background-color:  black;
+
+}
+.audio-trext{
+    color: black;
+   background-color:white;
+   font-family: "Lobster", Sans-serif;
+    margin-left: 30%;
+    width: 60px;
+
+}
+.audio-background{
+    
+}
+
+#bt1,#bt2{
+    color: black;
+    background-color: white;
+
+}
+#bt1{
+    margin-left: 30%;
+}
