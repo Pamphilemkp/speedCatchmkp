@@ -10,6 +10,10 @@
 </head>
 <body>
     <div class="head">
+
+        <button onclick="StartSound()" type="button" id="bt1">🔈</button>
+        <button onclick="pauseSound()" type="button" id="bt2">🔇</button>
+
         <h2 id="level" class="w3-xxxlarge font-effect-shadow-multiple">Level 2</h2>
         <div class="container">
         <div class="item">
@@ -48,13 +52,8 @@
          <source src="audio1.mp3" type="audio/mpeg" autostart="true" autoplay="true" >
          <source src="audio1.ogg" type="audio/ogg" autostart="true" autoplay="true" >
          Your browser does not support the audio element.
+
        </audio>
-     
-     
-       <p class="audio-trext"> Sounds </p>
-     
-     <button onclick="StartSound()" type="button" id="bt1">🔈</button>
-     <button onclick="pauseSound()" type="button" id="bt2">🔇</button>
      </div>
     
     <script>

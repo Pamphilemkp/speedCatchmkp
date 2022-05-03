@@ -4,9 +4,131 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="firstpage.css">
     <title>How to play</title>
 </head>
+<style>
+    button{
+    color: white;
+    background-color: rgb(56, 206, 186);
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    animation: btn 5s ease 1s infinite;
+
+}
+
+@keyframes back{
+    from{    height: 25px;;
+        width: 90px; }
+        to{
+            height:35px;
+            width: 110px;
+        }
+    }
+
+    @keyframes bt{
+    from{    height: 35px;;
+        width: 90px; }
+        to{
+            height:45px;
+            width: 110px;
+        }
+    }
+
+
+
+    .back{
+        color: white;
+    background-color: rgb(37, 61, 97);
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    animation: back 1s ease-in 1s infinite;
+    }
+
+
+
+
+</style>
 <body>
-    <p>Wanna know how to play? well let me show you</p>
+    <h2>Wanna know how to play? </h2>
+    <p>Well let me show you</p>
+
+
+
+     <div>
+         <p  id="Englsih" > 
+            <h4>
+                how to play? 
+                Select your language below
+          </h4>     
+        </p>
+    </div>
+     <div>
+         <p  id="french">
+            <h4>
+            comment jouer? 
+            Selectionner votre langue ci-dessous
+             </h4>
+            </p> 
+    </div>
+     <button onclick="french()">Francais</button>
+     <button onclick="Englsih()">Englsih</button>
+
+    <script >
+        const eng = document.getElementById("Englsih");
+        const fr = document.getElementById("french")
+
+
+        function french(){
+           fr.innerHTML = `            <p> 
+            Tout d'abord pour jouer s'il vous plaît appuyez sur l'option audio <br>
+             qui se trouver vers le haut de la page 🔊🔉 pour activer le son, <br>
+             le jeu est plus excitant et intéressant qu'avec le son ! 
+             </p>
+
+             <h3> Comment jouer ?</h3>
+
+             <p>
+                Le jeu consiste à attraper l'image en mouvement, vous devez être rapide pour <br>
+                appuyer là où l'image va et obtenir le plus de points possible et le score  <br>
+                doit être supérieur au minimum indiqué par niveau ; plus vous avancez dans  <br>
+                le niveau, plus le minimum augmente et plus il sera difficile de gagner et  <br>
+                votre meilleur score est le score le plus élevé que vous avez obtenu. <br>
+                Le jeu se déroule en un temps record de 60s. <br>
+                   bonne chance !
+                   </p>
+           
+           `;
+        }
+
+        function Englsih(){
+           eng.innerHTML =  `
+           <p> 
+            First of all to play please press the audio option to activate the sound, <br>
+            which  can be found towards the top of the page  🔊🔉  <br>
+            the game is more exciting and interesting  with the sound!
+             </p>
+
+             <h3>How to play ?</h3>
+
+             <p>
+                The game consists of catching the moving image, you have to be quick <br>
+                to press where the image goes and get as many points as possible and <br>
+                the score must be higher than the minimum indicated by level the more <br>
+                you advance in the level the more the minimum increases and the more <br>
+                difficult it will be to win and your best score is the highest score <br>
+                you have obtained. The game takes place in a record time of 60s.<br>
+                     good luck!
+                   </p>
+
+           `;
+        }
+
+    </script>
+
+<p><a href="index.html"><button class="back">back</button></a> </p>
+
 </body>
 </html>
