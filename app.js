@@ -61,6 +61,7 @@ function clearer(){
         refresher.appendChild(text)
         refresher.addEventListener("click",replayer)
         replay.appendChild(refresher)
+        
 
         
         function replayer(){
@@ -93,6 +94,7 @@ function clearer(){
         winFinal.appendChild(text1)
         next.appendChild(winFinal)
         next.style.marginTop = "20px";
+
 
         //setting best score
         let actualCount = localStorage.getItem("bestScore")

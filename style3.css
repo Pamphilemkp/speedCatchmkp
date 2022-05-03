@@ -87,8 +87,15 @@ h2{
 
 @media only screen and (max-width:400px){
     body{
-        font-size:2.1vh;
+        height: fit-content;
     }
+
+    .square:hover{
+        height: 20vh;
+        width: 20vw;
+        background-color:white;
+    }
+
     .item{
         margin-left:-10px;
     }

@@ -8,12 +8,14 @@ body{
     font-size: 2.8vh;
     background-size:cover;
     font-family: monospace;
-
+    height: fit-content;
     animation-name: image;
     animation-duration: 5s;
     animation-timing-function: ease-out;
     animation-delay: 0.3s;
     animation-fill-mode: both;
+    height: 100vh;
+    width: 100vh;
 
     
 
@@ -81,12 +83,6 @@ button{
 }
 
 @media only screen and (max-width:480px){
-    body{
-        font-size: 1.5vw;
-        font-size: 1.5vh;
-    }
-    h1{
-        font-size: 1.5vw;
-        font-size: 1.5vh;
-    }
+   
+    
 }
