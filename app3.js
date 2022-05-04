@@ -89,6 +89,7 @@ function clearer(){
         grid.style.width ="94%"
         grid.style.height ="30%"
         grid.style.padding ="40px"
+        grid.style.backgroundSize ="100vw"
         }
         else{
         grid.textContent= "You win  🤭🥳🤩";

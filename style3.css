@@ -6,7 +6,7 @@ body{
     font-size:3vh;
     padding: 0;
     margin-top: -21px;
-    
+
    
 }
 .head{
@@ -30,14 +30,11 @@ body{
     grid-template-columns:repeat(3,1fr);
     justify-content:center;
     gap:10px;
-   /* margin: 0px 15px;*/
-   background-color: black;
+
+    background-color: rgb(243, 237, 237);
     background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSuRE9EQ6ht6oOwgLhH_VcTFObhgVOj68qIMA&usqp=CAU");
     background-repeat: no-repeat;
-    background-size: cover;
-
-    
-    
+    background-size:cover;
 }
 * .square{
     border:solid black 1px;
